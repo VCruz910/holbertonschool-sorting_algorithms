@@ -69,7 +69,4 @@ void bitonic_sort(int *array, size_t size);
 /*-107-quick_sort_hoare.c, 107-O*/
 void quick_sort_hoare(int *array, size_t size);
 
-/*-1000-sort_deck.c, deck.h*/
-void sort_deck(deck_node_t **deck);
-
 #endif
