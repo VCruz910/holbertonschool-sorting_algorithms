@@ -40,6 +40,8 @@ void selection_sort(int *array, size_t size);
 
 /*-3-quick_sort.c, 3-O*/
 void quick_sort(int *array, size_t size);
+int QPartitions(int *array, int IDXLeft, int IDXRight, size_t size);
+void QRecursion(int *array, int IDXLeft, int IDXRight, size_t size);
 
 /*--Advanced Tasks*/
 /*-100-shell_sort.c*/
