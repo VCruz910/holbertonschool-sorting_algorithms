@@ -22,9 +22,9 @@ void SWITCHEROO(int *IS1, int *IS2)
  **/
 int QPartitions(int *array, int IDXLeft, int IDXRight, size_t size)
 {
-	int IDXAbove, IDXBelow;
-	int *Pivot = array + IDXRight;
-
+	int *Pivot, IDXAbove, IDXBelow;
+	
+	Pivot = array + IDXRight;
 	for (IDXAbove = IDXBelow = IDXLeft; IDXBelow < IDXRight; IDXBelow++)
 	{
 		if (array[IDXBelow] < *Pivot)
@@ -34,6 +34,7 @@ int QPartitions(int *array, int IDXLeft, int IDXRight, size_t size)
 				SWITCHEROO(array + IDXBelow, array + IDXAbove);
 				print_array(array, size);
 			}
+			IDXAbove++;
 		}
 	}
 	if (array[IDXAbove] > *Pivot)
