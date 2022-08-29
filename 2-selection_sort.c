@@ -36,7 +36,7 @@ void selection_sort(int *array, size_t size)
 		}
 		if ((array + I) != MIN)
 		{
-			SWITCHEROO( array + I, MIN);
+			SWITCHEROO(array + I, MIN);
 			print_array(array, size);
 		}
 	}
