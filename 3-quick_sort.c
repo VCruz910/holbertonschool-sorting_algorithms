@@ -7,6 +7,7 @@
 void SWITCHEROO(int *IS1, int *IS2)
 {
 	int TMP;
+
 	TMP = *IS1;
 	*IS1 = *IS2;
 	*IS2 = TMP;
