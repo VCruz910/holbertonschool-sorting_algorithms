@@ -15,9 +15,9 @@
  */
 typedef struct listint_s
 {
-  const int n;
-  struct listint_s *prev;
-  struct listint_s *next;
+const int n;
+struct listint_s *prev;
+struct listint_s *next;
 } listint_t;
 
 /*---Prototypes*/
@@ -46,6 +46,7 @@ void QRecursion(int *array, int IDXLeft, int IDXRight, size_t size);
 /*--Advanced Tasks*/
 /*-100-shell_sort.c*/
 void shell_sort(int *array, size_t size);
+void AuxShellFunc(int *InArr, int size, int n);
 
 /*-101-cocktail_sort_list.c, 101-O*/
 void cocktail_sort_list(listint_t **list);
