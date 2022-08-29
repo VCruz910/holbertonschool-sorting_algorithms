@@ -24,7 +24,7 @@ void SWITCHEROO(int *IS1, int *IS2)
 int QPartitions(int *array, int IDXLeft, int IDXRight, size_t size)
 {
 	int *Pivot, IDXAbove, IDXBelow;
-	
+
 	Pivot = array + IDXRight;
 	for (IDXAbove = IDXBelow = IDXLeft; IDXBelow < IDXRight; IDXBelow++)
 	{
