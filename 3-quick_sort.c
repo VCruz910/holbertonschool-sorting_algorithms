@@ -14,12 +14,12 @@ void SWITCHEROO(int *IS1, int *IS2)
 }
 
 /**
- * QPartition - Gives a PIV Index for quicksorting.
- * @array: Array to find PIV Index.
+ * QPartitions - Gives a PIV Index for quicksorting.
+ * @array: Variable for array.
  * @IDXLeft: Left Element Index.
  * @IDXRight: Right Element Index.
  * @size: Array size.
- * Return: PIV Element Index (I + 1).
+ * Return: IDXAbove.
  **/
 int QPartitions(int *array, int IDXLeft, int IDXRight, size_t size)
 {
