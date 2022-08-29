@@ -8,6 +8,7 @@
 void AuxShellFunc(int *InArr, int size, int n)
 {
 	int TMP, InA, InB;
+
 	for (InA = 0; (InA + n) < size; InA++)
 	{
 		for (InB = InA + n; (InB - n) >= 0; InB = InB - n)
