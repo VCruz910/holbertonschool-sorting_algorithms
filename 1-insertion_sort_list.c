@@ -22,16 +22,11 @@ int LEN_List(listint_t *L1ST)
  * **/
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *CURRENT = NULL;
-	listint_t *ONE = NULL;
-	listint_t *TWO = NULL;
-	listint_t *THREE = NULL;
-	listint_t *FOUR = NULL;
+	listint_t *CURRENT = NULL, *ONE = NULL;
+	listint_t *TWO = NULL, *THREE = NULL, *FOUR = NULL;
 
 	if (!list || !(*list) || LEN_List(*list) < 2)
-	{
 		return;
-	}
 	CURRENT = *list;
 	while (CURRENT)
 	{
@@ -41,31 +36,22 @@ void insertion_sort_list(listint_t **list)
 			TWO = CURRENT->prev;
 			THREE = CURRENT;
 			FOUR = CURRENT->next;
-
 			TWO->next = FOUR;
 			if (FOUR)
-			{
 				FOUR->prev = TWO;
-			}
 			THREE->next = TWO;
 			THREE->prev = ONE;
 			if (ONE)
-			{
 				ONE->next = THREE;
-			}
 			else
-			{
 				*list = THREE;
-			}
 			TWO->prev = THREE;
 			CURRENT = *list;
 			print_list(*list);
 			continue;
 		}
 		else
-		{
 			CURRENT = CURRENT->next;
-		}
 	}
 }
 
